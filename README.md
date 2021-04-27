@@ -35,7 +35,7 @@ SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä FROM Kurssisuoritus GROUP
 ## Tehtävä 17  
 SELECT kurssi.nimi AS kurssi, COUNT(Kurssisuoritus.kurssi) AS lukumäärä FROM kurssi, kurssisuoritus WHERE kurssi.kurssitunnus = kurssisuoritus.kurssi GROUP BY kurssi.nimi
 ## Tehtävä 18  
-
+SELECT kurssi.nimi AS kurssi, COUNT(Kurssisuoritus.kurssi) AS lukumäärä FROM Kurssi LEFT JOIN Kurssisuoritus ON kurssi.kurssitunnus = kurssisuoritus.kurssi GROUP BY kurssi.nimi
 ## Tehtävä 19  
 
 ## Tehtävä 20  
