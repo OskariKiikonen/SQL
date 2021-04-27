@@ -17,7 +17,7 @@ SELECT * FROM Opiskelija WHERE nimi='Anna'
 ## Tehtävä 8  
 SELECT * FROM Kurssisuoritus WHERE opiskelija='999999'  
 ## Tehtävä 9  
-SELECT DISTINCT pääaine FROM Opiskelija WHERE pääaine like '%tiede%'  
+SELECT DISTINCT pääaine FROM Opiskelija WHERE pääaine LIKE '%tiede%'
 ## Tehtävä 10  
 SELECT nimi, päivämäärä, arvosana FROM Kurssi, Kurssisuoritus WHERE Kurssi.kurssitunnus = Kurssisuoritus.kurssi
 ## Tehtävä 11  
@@ -29,13 +29,14 @@ SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Kurssiteh
 ## Tehtävä 14  
 
 ## Tehtävä 15  
-
+SELECT nimi FROM Kurssi LEFT JOIN Kurssitehtävä ON Kurssi.kurssitunnus= Kurssitehtävä.kurssi WHERE Kurssitehtävä.kurssi IS null
 ## Tehtävä 16  
-SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä FROM Kurssisuoritus GROUP BY kurssi
+SELECT kurssi AS kurssi, COUNT() AS lukumäärä FROM Kurssisuoritus GROUP BY kurssi
 ## Tehtävä 17  
 SELECT kurssi.nimi AS kurssi, COUNT(Kurssisuoritus.kurssi) AS lukumäärä FROM kurssi, kurssisuoritus WHERE kurssi.kurssitunnus = kurssisuoritus.kurssi GROUP BY kurssi.nimi
 ## Tehtävä 18  
 SELECT kurssi.nimi AS kurssi, COUNT(Kurssisuoritus.kurssi) AS lukumäärä FROM Kurssi LEFT JOIN Kurssisuoritus ON kurssi.kurssitunnus = kurssisuoritus.kurssi GROUP BY kurssi.nimi
 ## Tehtävä 19  
-
+CREATE TABLE Kurssi (kurssitunnus, nimi, kuvaus)
 ## Tehtävä 20  
+INSERT INTO Kurssi (kurssitunnus, nimi, kuvaus) VALUES('12345','SQL-kielen perusteet', "SELECT 'Hei maailma'")
