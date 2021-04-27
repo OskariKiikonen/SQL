@@ -1,4 +1,4 @@
-# SQL  
+# SQL Tehtävät  
 
 ## Tehtävä 1  
 
@@ -31,7 +31,7 @@ SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Kurssiteh
 ## Tehtävä 15  
 
 ## Tehtävä 16  
-
+SELECT kurssi AS kurssikoodi, COUNT(*) AS lukumäärä FROM Kurssisuoritus GROUP BY kurssi
 ## Tehtävä 17  
 
 ## Tehtävä 18  
