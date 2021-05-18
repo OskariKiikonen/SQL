@@ -23,3 +23,13 @@ SELECT * FROM Kurssisuoritus WHERE opiskelija='999999'
 
 ### Tehtävä 9
 SELECT * FROM Opiskelija WHERE pääaine NOT LIKE '%tiede%'
+
+### Tehtävä 10
+SELECT nimi, päivämäärä, arvosana FROM Kurssi, Kurssisuoritus WHERE Kurssi.kurssitunnus = Kurssisuoritus.kurssi
+
+### Tehtävä 11
+SELECT nimi, päivämäärä, arvosana FROM Opiskelija, Kurssisuoritus WHERE Opiskelija.opiskelijanumero = Kurssisuoritus.opiskelija
+
+
+
+
