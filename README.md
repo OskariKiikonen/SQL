@@ -40,7 +40,7 @@ SELECT Kurssi.nimi AS kurssi, Tehtävä.nimi AS tehtävä FROM Kurssi, Kurssiteh
 neljäs ja viides rivi ovat suoritettuja tehtäviä
 
 ### Tehtävä 15
-
+SELECT nimi FROM Kurssi LEFT JOIN Kurssitehtävä ON Kurssi.kurssitunnus= Kurssitehtävä.kurssi WHERE Kurssitehtävä.kurssi IS null
 ### Tehtävä 16
 
 ### Tehtävä 17
