@@ -1,5 +1,7 @@
 # SQL Tehtävät
 ### Tehtävä 1
+Nimelläni löytyy Oscar ja Oskar nimisiä. Nimellä Matti tulee Mathiasta ja Maija nimellä löytyy Maja nimisiä.
+
 ### Tehtävä 2
 ### Tehtävä 3
 ### Tehtävä 4
