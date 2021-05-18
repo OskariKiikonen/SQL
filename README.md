@@ -5,7 +5,7 @@ Nimelläni löytyy Oscar ja Oskar nimisiä. Nimellä Matti tulee Mathiasta ja Ma
 ### Tehtävä 2
 Olen syöttänyt sähköpostini todella moneen eri palveluun, nimeä ja sukunimeä taas en erityisen moneen.
 ### Tehtävä 3
-![joo] (teht3.png)
+![joo](teht3.png)
 ### Tehtävä 4
 SELECT * FROM Kurssisuoritus
 
