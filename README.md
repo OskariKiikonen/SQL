@@ -3,6 +3,7 @@
 Nimelläni löytyy Oscar ja Oskar nimisiä. Nimellä Matti tulee Mathiasta ja Maija nimellä löytyy Maja nimisiä.
 
 ### Tehtävä 2
+Olen syöttänyt sähköpostini todella moneen eri palveluun, nimeä ja sukunimeä taas en erityisen moneen.
 ### Tehtävä 3
 ### Tehtävä 4
 SELECT * FROM Kurssisuoritus
